@@ -9,14 +9,15 @@ public class DisplayTwo12 {
     System.out.print("Input some number: ");
     numInput = input12.nextInt();
 
-    for(int i =2; i<= numInput; i+=2) {
+    for(int i =1; i<= numInput; i++) {
+        if (i % 2 == 0) {
        
-            System.out.println("2 multiple: "+ i);
+            System.out.print( i + " ");
 
         }
     }
     
-}
+}}
 
     
 
