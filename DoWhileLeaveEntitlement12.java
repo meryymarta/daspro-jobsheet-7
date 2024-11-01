@@ -4,7 +4,7 @@ public class DoWhileLeaveEntitlement12 {
         Scanner input12 = new Scanner(System.in);
 
         //Declaration Varibale
-        int leaveEntitlement = 0, numLeave, numInput;
+        int leaveEntitlement = 0, numLeave = 0, numInput;
         String confirmation;
 
         System.out.print("Input The Number of Leave Entitlement: ");
@@ -16,20 +16,22 @@ public class DoWhileLeaveEntitlement12 {
 
                 if(confirmation.equalsIgnoreCase("y")) {
                     System.out.print("How many day (s)? ");
-                    numLeave = input12.nextInt();
+                    numLeave = input12.nextInt(); 
 
-                    if(numLeave <= leaveEntitlement) {
+                    
+                    while (numLeave > leaveEntitlement) {
+                        System.out.println("You dont have enough leave entitlement for " + numLeave + " days ");
+                        System.out.print("Enter a valid number of days: ");
+                        numLeave = input12.nextInt(); }
+
+                    }
                         leaveEntitlement -= numLeave;
                         System.out.println("Remaining leave entitlement: "+leaveEntitlement);
-                    } else {
-                        System.out.println("You dont have enough leave entitlement");
-                        break;
-                    }
-                    }
-                } while(leaveEntitlement > 0); }
-            }
+                
+                } while(leaveEntitlement > 0); 
+    }}
         
-        
+
     
     
         
