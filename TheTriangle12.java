@@ -10,11 +10,9 @@ public class TheTriangle12 {
         System.out.print("Input some number: ");
         numInput = input12.nextInt();
         
-        while (i < numInput) {
+        for ( i = 0; i < numInput; i++) {
             s += " *";
             System.out.println(s);
-            i++;
-        
         
         }
         
