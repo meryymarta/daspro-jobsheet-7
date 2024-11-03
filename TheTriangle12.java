@@ -10,8 +10,8 @@ public class TheTriangle12 {
         System.out.print("Input some number: ");
         numInput = input12.nextInt();
         
-        for ( i = 0; i < numInput; i++){
-            for  (j = 0; j <= i; j++) {
+        for ( i = numInput; i > 0; i--){
+            for  (j = 0; j < i; j++) {
               s += " *";
         
         }
